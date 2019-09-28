@@ -1,8 +1,8 @@
 ## fasion EC
 
-### environment
+### ・environment
 
-#### app_server_fasion_ec
+#### ・app_server_fasion_ec
 
 - Ruby 2.5.1
 - Rails 5.1.6
@@ -10,13 +10,13 @@
 - MySQL 5.6
 - API mode
 
-#### front_server_fasion_ec
+#### ・front_server_fasion_ec
 
 - Node.js 12.8.0
 - Nuxt.js
 - Docker（node:12.8.0）
 
-### Set Up
+### ・Set Up
 
 git clone
 ```
@@ -26,7 +26,7 @@ $ git clone https://github.com/THitokuse/app_server_fasion_ec.git
 $ git clone https://github.com/THitokuse/front_server_fasion_ec.git
 ```
 
-create .env file in root dir
+create .env file in app_server_fasion_ec dir
 ```.env
 USER=root
 PASSWORD=
