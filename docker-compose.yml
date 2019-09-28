@@ -1,0 +1,30 @@
+version: '2'
+services:
+  db:
+    image: mysql:5.6
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: fasion-ec
+    volumes:
+      - ./app_server_fasion_ec/db/mysql/volumes:/var/lib/mysql
+  web:
+    build: app_server_fasion_ec/
+    ports:
+      - 3000:3000
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    volumes:
+      - ./app_server_fasion_ec:/app
+    links:
+      - db
+    env_file:
+      - ./app_server_fasion_ec/.env
+    tty: true
+    stdin_open: true
+  front_server_fasion_ec:
+    build: front_server_fasion_ec/
+    tty: true
+    ports:
+      - 8000:3000
+    command: yarn dev
+    volumes:
+      - ./front_server_fasion_ec:/app
