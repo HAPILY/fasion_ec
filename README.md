@@ -16,6 +16,11 @@
 - Nuxt.js
 - Docker（node:12.8.0）
 
+#### AWS Architecture
+
+![fasion-ec-infra-architect](https://user-images.githubusercontent.com/45042275/65850902-b77ea380-e38b-11e9-8c6f-a01193d80952.png)
+
+
 ### ・Set Up
 
 git clone
