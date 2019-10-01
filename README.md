@@ -20,6 +20,11 @@
 
 ![fasion-ec-infra-architect](https://user-images.githubusercontent.com/45042275/65850902-b77ea380-e38b-11e9-8c6f-a01193d80952.png)
 
+#### DB Architecture
+
+![fasion-ec](https://user-images.githubusercontent.com/45042275/65926282-7b048380-e42f-11e9-9d1e-a1ba014d3225.png)
+
+
 
 ### ・Set Up
 
