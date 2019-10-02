@@ -39,7 +39,9 @@
 
 #### ・items一覧を取得する
 HTTPメソッド： GET
+
 リクエストURL： /api/v1/items
+
 パラメータのデフォルト値：
 ```
 {
@@ -76,7 +78,9 @@ HTTPメソッド： GET
 
 #### ・itemsを新しく作成する
 HTTPメソッド： POST
+
 リクエストURL： /api/v1/items
+
 パラメータのデフォルト値：
 ```
 {
@@ -104,7 +108,9 @@ HTTPメソッド： POST
 
 #### ・itemsを更新する
 HTTPメソッド： PUT
+
 リクエストURL： /api/v1/items/:id
+
 パラメータのデフォルト値：
 ```
 {
@@ -132,7 +138,9 @@ HTTPメソッド： PUT
 
 #### ・itemsを削除する
 HTTPメソッド： DELETE
+
 リクエストURL： /api/v1/items/:id
+
 パラメータのデフォルト値：
 ```
 {
@@ -160,7 +168,9 @@ HTTPメソッド： DELETE
 
 #### ・contact（お問い合わせ）内容を送る
 HTTPメソッド： POST
+
 リクエストURL： /api/v1/contacts
+
 パラメータのデフォルト値：
 ```
 {
@@ -175,7 +185,9 @@ HTTPメソッド： POST
 
 #### ・contact（お問い合わせ）内容を送る
 HTTPメソッド： GET
+
 リクエストURL： /api/v1/contacts
+
 パラメータのデフォルト値：
 ```
 {
