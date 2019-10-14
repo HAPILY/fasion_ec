@@ -5,7 +5,7 @@
 ### ・app_server_fasion_ec
 
 - Ruby 2.5.1
-- Rails 5.1.6
+- Rails 6.0.0
 - Docker (Ruby:2.5.1)
 - MySQL 5.6
 - API mode
