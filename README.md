@@ -18,7 +18,7 @@
 
 ### AWS Architecture
 
-![fasion-ec-infra-architect](https://user-images.githubusercontent.com/45042275/65850902-b77ea380-e38b-11e9-8c6f-a01193d80952.png)
+![fasion-ec-infra-architect](https://user-images.githubusercontent.com/45042275/66733548-e2dcb480-ee9a-11e9-9e2d-8ea76a01f944.jpg)
 
 ### DB Architecture
 
