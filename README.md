@@ -31,175 +31,18 @@
 |HTTPメソッド|リクエストURL|機能概要|
 |------|----|-------|
 |GET|/api/v1/items|items一覧を取得|
+|GET|/api/v1/items/:id|1つのitemsを取得|
 |POST|/api/v1/items/:id|itemsを新しく作成|
 |PUT|/api/v1/items/:id|itemsを更新|
 |DELETE|/api/v1/items/:id|itemsを削除|
-|POST|/api/v1/contacts|お問い合わせを登録|
+|GET|/api/v1/news|news一覧を取得|
+|GET|/api/v1/news/:id|1つのnewsを取得|
+|POST|/api/v1/news/:id|newsを新しく作成|
+|PUT|/api/v1/news/:id|newsを更新|
+|DELETE|/api/v1/news/:id|newsを削除|
 |GET|/api/v1/contacts|お問い合わせを一覧|
-
-#### ・items一覧を取得する
-HTTPメソッド： GET
-
-リクエストURL： /api/v1/items
-
-パラメータのデフォルト値：
-```
-{
-  "status": "SUCCESS",
-  "data": [
-    {
-      "id": int(8),
-      "name": string(255),
-      "price": int(8),
-      "price": int,
-      "content": text,
-      "images": [
-        {
-          "id": int(8),
-          "src": string(255)
-        },
-        {
-          "id": int(8),
-          "src": string(255)
-        }
-      ]
-    },
-    {
-      "id": int(8),
-      "name": string(255),
-      "price": int(8),
-      "price": int,
-      "content": text
-    }
-  ]
-}
-```
-※ 入力パラメータによってレスポンス情報は変化する。
-
-#### ・itemsを新しく作成する
-HTTPメソッド： POST
-
-リクエストURL： /api/v1/items
-
-パラメータのデフォルト値：
-```
-{
-  "status": "SUCCESS",
-  "data": {
-    "id": int(8),
-    "name": string(255),
-    "price": int(8),
-    "price": int,
-    "content": text,
-    "images": [
-      {
-        "id": int(8),
-        "src": string(255)
-      },
-      {
-        "id": int(8),
-        "src": string(255)
-      }
-    ]
-  }
-}
-```
-※ 入力パラメータによってレスポンス情報は変化する。
-
-#### ・itemsを更新する
-HTTPメソッド： PUT
-
-リクエストURL： /api/v1/items/:id
-
-パラメータのデフォルト値：
-```
-{
-  "status": "SUCCESS",
-  "data": {
-    "id": int(8),
-    "name": string(255),
-    "price": int(8),
-    "price": int,
-    "content": text,
-    "images": [
-      {
-        "id": int(8),
-        "src": string(255)
-      },
-      {
-        "id": int(8),
-        "src": string(255)
-      }
-    ]
-  }
-}
-```
-※ 更新する入力パラメータのみを送る
-
-#### ・itemsを削除する
-HTTPメソッド： DELETE
-
-リクエストURL： /api/v1/items/:id
-
-パラメータのデフォルト値：
-```
-{
-  "status": "SUCCESS",
-  "data": {
-    "id": int(8),
-    "name": string(255),
-    "price": int(8),
-    "price": int,
-    "content": text,
-    "images": [
-      {
-        "id": int(8),
-        "src": string(255)
-      },
-      {
-        "id": int(8),
-        "src": string(255)
-      }
-    ]
-  }
-}
-```
-※ 更新する入力パラメータのみを送る
-
-#### ・contact（お問い合わせ）内容を送る
-HTTPメソッド： POST
-
-リクエストURL： /api/v1/contacts
-
-パラメータのデフォルト値：
-```
-{
-  "status": "SUCCESS",
-  "data": {
-    "name": string(255),
-    "email": string(255),
-    "content": string(255)
-  }
-}
-```
-
-#### ・contact（お問い合わせ）内容を送る
-HTTPメソッド： GET
-
-リクエストURL： /api/v1/contacts
-
-パラメータのデフォルト値：
-```
-{
-  "status": "SUCCESS",
-  "data": {
-    "name": string(255),
-    "email": string(255),
-    "content": string(255)
-  }
-}
-```
-※ 入力パラメータによってレスポンス情報は変化する。
+|GET|/api/v1/contacts|1つのお問い合わせを取得|
+|POST|/api/v1/contacts|お問い合わせを登録|
 
 ## ・Set Up
 
@@ -213,9 +56,15 @@ $ git clone https://github.com/THitokuse/front_server_fasion_ec.git
 
 create .env file in app_server_fasion_ec dir
 ```.env
-USER=root
-PASSWORD=
-HOST=db
+DATABASE_USER = root
+DATABASE_PASSWORD = fasion-ec
+DATABASE_HOST = db
+RAILS_MAX_THREADS = 5
+
+AWS_ACCESS_KEY_ID = #####
+AWS_SECRET_ACCESS_KEY = #####
+AWS_REGION = ######
+AWS_S3_BUCKET = #####
 ```
 
 build docker-compose
