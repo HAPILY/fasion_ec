@@ -5,7 +5,7 @@ HTTPメソッド： GET
 
 パラメータのデフォルト値：
 ```
-"contacts": [
+"data": [
   {
     "id": 1,
     "name": "長谷川太一郎",
@@ -30,7 +30,7 @@ HTTPメソッド： GET
 
 パラメータのデフォルト値：
 ```
-"contact": {
+"data": {
   "id": 1,
   "name": "長谷川太一郎",
   "email": "hasegawa@gmail.com",
@@ -46,7 +46,7 @@ HTTPメソッド： POST
 
 パラメータのデフォルト値：
 ```
-"contact": {
+"data": {
   "name": "長谷川太一郎",
   "email": "hasegawa@gmail.com",
   "content": "今日はセールス特売日です。よろしくお願いします。"

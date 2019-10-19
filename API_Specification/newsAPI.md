@@ -5,7 +5,7 @@ HTTPメソッド： GET
 
 パラメータのデフォルト値：
 ```
-"news": [
+"data": [
   {
     "id": 1,
     "title": "twitterの写真",
@@ -33,7 +33,7 @@ HTTPメソッド： POST
 
 パラメータのデフォルト値：
 ```
-"news": {
+"data": {
   "title": "twitterの写真",
   "image": "@/Users/hasegawataichiro/lunch_time_for.jpg;type=image/jpg",
   "content": "今日はセールス特売日です。よろしくお願いします。",
@@ -50,7 +50,7 @@ HTTPメソッド： GET
 
 パラメータのデフォルト値：
 ```
-"news": {
+"data": {
   {
     "id": 1,
     "title": "twitterの写真",
@@ -71,7 +71,7 @@ HTTPメソッド： PUT
 
 パラメータのデフォルト値：
 ```
-"news": {
+"data": {
   "title": "twitterの写真",
   "image": "@/Users/hasegawataichiro/lunch_time_for.jpg;type=image/jpg",
   "content": "今日はセールス特売日です。よろしくお願いします。",
