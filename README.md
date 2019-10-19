@@ -30,6 +30,12 @@
 
 |HTTPメソッド|リクエストURL|機能概要|
 |------|----|-------|
+|GET|/api/v1/users/login|ユーザーログイン|
+|POST|/api/v1/users|ユーザーサインアップ|
+|GET|/api/v1/users|ユーザー一覧を取得|
+|GET|/api/v1/users/:id|1ユーザーを取得|
+|PUT|/api/v1/users/:id|ユーザーを更新|
+|DELETE|/api/v1/users/:id|ユーザーを削除|
 |GET|/api/v1/items|items一覧を取得|
 |GET|/api/v1/items/:id|1つのitemsを取得|
 |POST|/api/v1/items/:id|itemsを新しく作成|
