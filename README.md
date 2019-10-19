@@ -22,7 +22,8 @@
 
 ### DB Architecture
 
-![fasion-ec](https://user-images.githubusercontent.com/45042275/66733718-626a8380-ee9b-11e9-8a05-1905bdb33db0.jpg)
+![fasion-ec](https://user-images.githubusercontent.com/45042275/67148591-fd1ff380-f2db-11e9-8264-9778cd313367.png)
+
 
 ### API Specification
 
